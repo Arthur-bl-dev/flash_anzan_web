@@ -1,7 +1,7 @@
 {
     "name": "おーろら★ふらっしゅ",
     "short_name": "Flash Calculations",
-    "description": "\"Flash Calculations\". É um jogo onde números são exibidos em sequência para serem calculados.",
+    "description": "Flash Calculations -  É um jogo onde números são exibidos em sequência para serem calculados.",
     "start_url": "./",
     "id": "./",
     "display": "fullscreen",
