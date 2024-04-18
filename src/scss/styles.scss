@@ -1,215 +1,219 @@
 // customize bootstrap
-@import "custom";
+@import 'custom';
 
-@import "bootstrap-icons/font/bootstrap-icons.css";
-@import "simple-keyboard/build/css/index.css";
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import 'simple-keyboard/build/css/index.css';
 
 @font-face {
-  font-family: 'Kosugi Maru';
-  src: url("../fonts/KosugiMaru-Regular.ttf")
+    font-family: 'Kosugi Maru';
+    src: url('../fonts/KosugiMaru-Regular.ttf');
 }
 
 @font-face {
-  font-family: "ABACUS2";
-  src: url("../fonts/ABACUS2.woff");
+    font-family: 'ABACUS2';
+    src: url('../fonts/ABACUS2.woff');
 }
 
 html {
-  margin: 0 10px;
+    margin: 0 10px;
 }
 
 body {
-  max-width: 1500px;
-  margin: auto;
-  background-color: black;
+    max-width: 1500px;
+    margin: auto;
+    background-color: black;
 }
 
 p {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
 hr {
-  border-top: 1px solid white;
-  margin: 5px 0;
+    border-top: 1px solid white;
+    margin: 5px 0;
 }
 
 .white {
-  color: white;
+    color: white;
 }
 
 .font {
-  font-family: 'Kosugi Maru', sans-serif;
-  color: white;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: white;
 }
 
 @media screen and (min-width: 500px) {
-  .font {
-    font-size: 24px;
-  }
+    .font {
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 499px) {
-  .font {
-    font-size: 16px;
-  }
+    .font {
+        font-size: 16px;
+    }
 }
 
 /* 出題部分 */
 
-.calculate-area, .number-area {
-  width: 100%;
+.calculate-area,
+.number-area {
+    width: 100%;
 }
 
 @media screen and (min-width: 500px) {
-  .number-area, #input-answer-box {
-    font-size: 90px;
-  }
+    .number-area,
+    #input-answer-box {
+        font-size: 90px;
+    }
 
-  #input-answer-box-touch-display {
-    font-size: 45px;
-  }
+    #input-answer-box-touch-display {
+        font-size: 45px;
+    }
 }
 
 @media screen and (max-width: 499px) {
-  .number-area, #input-answer-box {
-    font-size: 60px;
-  }
+    .number-area,
+    #input-answer-box {
+        font-size: 60px;
+    }
 
-  #input-answer-box-touch-display {
-    font-size: 30px;
-  }
+    #input-answer-box-touch-display {
+        font-size: 30px;
+    }
 }
 
 .calculate-area {
-  text-align: center;
-  display: none;
-  background-color: black;
-  border: solid 1px white;
-  margin-top: 5px;
-  cursor: none !important;
+    text-align: center;
+    display: none;
+    background-color: black;
+    border: solid 1px white;
+    margin-top: 5px;
+    cursor: none !important;
 }
 
 @media screen and (min-width: 1025px) {
-  .big-size-number {
-    font-size: 180px;
-  }
+    .big-size-number {
+        font-size: 180px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-  .big-size-number {
-    font-size: 135px;
-  }
+    .big-size-number {
+        font-size: 135px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .big-size-number {
-    font-size: 100px;
-  }
+    .big-size-number {
+        font-size: 100px;
+    }
 }
 
 .full-screen {
-  position: fixed;
-  display: table;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border: 0;
-  margin: 0;
-  z-index: 10;
+    position: fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 0;
+    margin: 0;
+    z-index: 10;
 }
 
 #header-message {
-  text-align: left;
-  position: absolute;
-  margin: 10px;
-  z-index: 10;
+    text-align: left;
+    position: absolute;
+    margin: 10px;
+    z-index: 10;
 }
 
 .number-area {
-  display: table-cell;
-  vertical-align: middle;
-  color: limegreen;
+    display: table-cell;
+    vertical-align: middle;
+    color: #FF0000;
 }
 
 .abacus-font {
-  font-family: 'ABACUS2', sans-serif;
-  font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 /* 操作部分 */
 
 @media screen and (min-width: 500px) {
-  .label-area {
-    width: 100%;
-  }
+    .label-area {
+        width: 100%;
+    }
 
-  .input-box {
-    font-size: 24px;
-    width: 120px;
-    padding: 10px 15px;
-  }
+    .input-box {
+        font-size: 24px;
+        width: 120px;
+        padding: 10px 15px;
+    }
 }
 
 @media screen and (max-width: 499px) {
-  .label-area {
-    float: left;
-    padding: 5px 0;
-  }
+    .label-area {
+        float: left;
+        padding: 5px 0;
+    }
 }
 
 .display-none {
-  display: none;
+    display: none;
 }
 
 .input-answer-box {
-  background-color: white;
-  z-index: 2;
-  text-align: center;
-  font-family: 'ABACUS2', sans-serif;
+    background-color: white;
+    z-index: 2;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .input-answer-keyboard-touch {
-  font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Kosugi Maru', sans-serif;
 }
 
-input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-input[type="number"] {
-  -moz-appearance: textfield;
+input[type='number'] {
+    -moz-appearance: textfield;
 }
 
 #notice-area {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  text-align: right;
-  color: limegreen;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    color: limegreen;
 }
 
 @keyframes show {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .display-none.show {
-  display: block;
-  animation: show 300ms linear 0s;
+    display: block;
+    animation: show 300ms linear 0s;
 }
 
 .operation-panel {
-  height: calc(100vh - map-get($spacers, 2) * 2 - 1px);
+    height: calc(100vh - map-get($spacers, 2) * 2 - 1px);
 }
 
 .difficulty-not-supported {
-  background-color: $pink-100;
+    background-color: $pink-100;
 }

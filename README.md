@@ -1,45 +1,38 @@
-# おーろら★ふらっしゅ
+# Oláora★Flash
 
-作者自身のフラッシュ暗算能力の向上を兼ねて、フラッシュ暗算アプリ「おーろら★ふらっしゅ」を作成しました✨  
-桁数や口数、秒数を細かく設定可能です🙆  
-また、珠算式暗算などを基準に独自の難易度設定を 3 段階用意しています🥇🥈🥉  
-日々の脳トレや練習にご活用ください🥰
+Criei o aplicativo de cálculo mental flash "Oláora★Flash" para melhorar minhas próprias habilidades de cálculo mental ✨. Você pode configurar detalhadamente o número de dígitos, o número de problemas e o tempo em segundos 🙆. Além disso, oferecemos três níveis de dificuldade exclusivos, baseados no cálculo mental abacus 🥇🥈🥉. Por favor, use-o diariamente para treinar e praticar seu cérebro 🥰.
 
 ---
 
-## プライバシーポリシー
+## Política de Privacidade
 
-### 個人情報について
+### Informações Pessoais
 
-「個人情報」とは、[Fairy Select](https://www.fairy-select.com/)
-が本アプリを通じて収集した情報のうち、氏名やメールアドレス、電話番号等により個人が識別される可能性のある情報を言います。  
-本アプリは個人情報の取得を行っておりません。
+"Informações pessoais" referem-se a informações coletadas pelo [Fairy Select](https://www.fairy-select.com/) através deste aplicativo, como nome, endereço de e-mail, número de telefone, ou qualquer outra informação que possa identificar uma pessoa individualmente. Este aplicativo não coleta informações pessoais.
 
-### 本アプリの利用統計について
+### Estatísticas de Uso do Aplicativo
 
-個人情報以外に問題の出題設定や正誤判定を収集することがあります。  
-収集させていただいた情報は、本アプリの改善や機能開発に利用させていただきます。
-本アプリを利用される方はこの情報収集について同意するものとします。
+Além das informações pessoais, podemos coletar configurações de problemas e resultados de avaliação para fins estatísticos. As informações coletadas serão utilizadas para melhorar e desenvolver novas funcionalidades do aplicativo. Ao utilizar este aplicativo, você concorda com a coleta dessas informações.
 
-### 広告配信について
+### Publicidade
 
-本アプリは、暗算による計算技能の向上を目的として開発されたものであり、広告の配信は行っておりません。
+Este aplicativo foi desenvolvido com o propósito de melhorar habilidades de cálculo mental, e não exibe anúncios.
 
-### 用語
+### Glossário
 
-「問題」とは、本アプリで設定した数値に基づき、画面に連続で表示される数字のことを言います。  
-「出題する」とは、本アプリで設定した数値に基づき、問題の数字を画面に連続で表示することを言います。  
-「表示間隔」とは、問題のある数字が描画されてから次の数字が描画されるまでの時間のことを言います。  
-「問題の出題設定」とは、画面に表示される数字の表示間隔、桁数、個数、難易度、フォント（色、大きさ）などを言います。
+- "Problema" se refere aos números que são exibidos consecutivamente na tela com base nas configurações do aplicativo.
+- "Realizar uma pergunta" significa exibir os números do problema consecutivamente na tela com base nas configurações do aplicativo.
+- "Intervalo de exibição" refere-se ao tempo entre a exibição de um número do problema e o próximo número.
+- "Configurações de perguntas" incluem intervalo de exibição dos números, número de dígitos, quantidade de números, dificuldade, e estilo da fonte (cor, tamanho), entre outros.
 
-### 制定日
+### Data de Publicação
 
-制定: 2023 年 10 月 7 日
+Publicado em: 7 de outubro de 2023
 
-## 製作者情報
+## Informações do Desenvolvedor
 
 [Fairy Select](https://www.fairy-select.com/)
 
-お問い合わせ窓口  
+Entre em Contato
 noritaka.izumi{at}gmail.com  
-（`{at}` をアットマークに置き換えてご利用ください）
+(Substitua `{at}` pelo símbolo "@" ao utilizar este endereço de e-mail)

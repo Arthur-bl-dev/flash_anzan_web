@@ -7,14 +7,14 @@ import {
 import { button, htmlElements } from './dom/htmlElement.js'
 
 const flexibleUpdateInstallStatusMessageMap: { [key in FlexibleUpdateInstallStatus]: string } = {
-    [FlexibleUpdateInstallStatus.UNKNOWN]: '不明なステータス',
-    [FlexibleUpdateInstallStatus.PENDING]: 'アップデートを待っています...',
-    [FlexibleUpdateInstallStatus.DOWNLOADING]: 'アップデートを準備中...',
-    [FlexibleUpdateInstallStatus.INSTALLING]: 'アップデートをインストール中...',
+    [FlexibleUpdateInstallStatus.UNKNOWN]: 'Status desconhecido',
+    [FlexibleUpdateInstallStatus.PENDING]: 'Aguardando atualização...',
+    [FlexibleUpdateInstallStatus.DOWNLOADING]: 'Preparando a atualização...',
+    [FlexibleUpdateInstallStatus.INSTALLING]: 'Instalando a atualização...',
     [FlexibleUpdateInstallStatus.INSTALLED]: 'アップデートをインストールしました。',
-    [FlexibleUpdateInstallStatus.FAILED]: 'アップデートに失敗しました。',
-    [FlexibleUpdateInstallStatus.CANCELED]: 'アップデートをキャンセルしました。',
-    [FlexibleUpdateInstallStatus.DOWNLOADED]: 'アップデートの準備ができました。',
+    [FlexibleUpdateInstallStatus.FAILED]: 'Atualização instalada',
+    [FlexibleUpdateInstallStatus.CANCELED]: 'Atualização cancelada.',
+    [FlexibleUpdateInstallStatus.DOWNLOADED]: 'Atualização pronta para ser instalada.',
 }
 
 export async function checkMobileAppUpdate(): Promise<void> {
@@ -48,7 +48,8 @@ export async function checkMobileAppUpdate(): Promise<void> {
                         const bytesDownloaded = state.bytesDownloaded as number
                         const totalBytesToDownloadMb = Math.floor(totalBytesToDownload / 10000) / 100
                         const downloadedPercentage = Math.floor((bytesDownloaded * 100) / totalBytesToDownload)
-                        htmlElements.inAppUpdateNotificationMessage.innerText += ` (${totalBytesToDownloadMb} MB のうち ${downloadedPercentage}%)`
+                        htmlElements.inAppUpdateNotificationMessage.innerText += ` (${totalBytesToDownloadMb} MB de ${downloadedPercentage}%)`
+
                         break
                     }
                     default:

@@ -66,12 +66,12 @@ async function flash(options: FlashOptions = {}): Promise<void> {
          */
         function displayResult(numberStr: string, answer: FlashAnswer, offset: number): void {
             const headerMessageInnerText1 =
-                numberStr !== '' ? 'あなたの答え：' + Number(numberStr).toLocaleString() : 'あなたの答え：'
+                numberStr !== '' ? 'Minha resposta: ' + Number(numberStr).toLocaleString() : 'Minha resposta: '
             const isCorrect = numberStr === answer.toString()
             const resultAudioObj: AudioObjKey = isCorrect ? 'correct' : 'incorrect'
             const headerMessageInnerText2: string = isCorrect
-                ? `正解！（${headerMessageInnerText1}）`
-                : `不正解...（${headerMessageInnerText1}）`
+                ? `Correto！（${headerMessageInnerText1}）`
+                : `"Resposta incorreta."...（${headerMessageInnerText1}）`
             const questionNumberAreaInnerHTML = !checkboxes.hideAnswer.checked
                 ? answer.toDisplay()
                 : isCorrect
@@ -110,10 +110,10 @@ async function flash(options: FlashOptions = {}): Promise<void> {
                         },
                         { once: true }
                     )
-                    noticeArea.innerText = '画面をタッチすると戻ります。'
+                    noticeArea.innerText = 'Toque na tela para voltar.'
                 } else {
                     // 非タッチデバイス
-                    noticeArea.innerText = 'W キーを押すと戻ります。'
+                    noticeArea.innerText = 'Pressione a tecla W para voltar.'
                 }
             }, timeToDisplay + offset)
         }
@@ -124,7 +124,7 @@ async function flash(options: FlashOptions = {}): Promise<void> {
                 const flashElapsedTimeMs = Math.floor(measuredTime.end - measuredTime.start)
                 const afterDecimalPointStr = ('00' + String(flashElapsedTimeMs % 1000)).slice(-3)
                 const beforeDecimalPointStr = String(Math.floor(flashElapsedTimeMs / 1000))
-                headerMessage.innerText = `実時間計測: ${beforeDecimalPointStr}.${afterDecimalPointStr} 秒（1 口目表示～最終口消画）`
+                headerMessage.innerText = `Medição em tempo real: ${beforeDecimalPointStr}.${afterDecimalPointStr} Segundos (do início da exibição do primeiro número até o último número desaparecer)`
             }
 
             // モーダル表示時のイベント設定
@@ -407,8 +407,8 @@ void (async () => {
                         welcomeModal.hide()
                     })
                     .catch((_) => {
-                        alert('フォント・音声の読み込みに失敗しました。')
-                        if (confirm('もう一度読み込みますか？')) {
+                        alert('Erro ao carregar a fonte ou o áudio.')
+                        if (confirm('Você gostaria de carregar novamente?')) {
                             location.reload()
                         }
                     })

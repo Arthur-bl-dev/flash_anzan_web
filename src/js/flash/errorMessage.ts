@@ -1,7 +1,7 @@
 import { htmlElements } from '../dom/htmlElement.js'
 
 const errorMessageMap = {
-    difficultyNotSupported: '難易度設定がサポートされていない桁数です',
+    difficultyNotSupported: 'A configuração de dificuldade não é suportada para esse número de dígitos',
 } as const
 
 type ErrorMessageMapKey = keyof typeof errorMessageMap
